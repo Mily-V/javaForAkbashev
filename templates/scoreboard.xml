@@ -1,0 +1,18 @@
+<fest:template xmlns:fest="http://fest.mail.ru" context_name="json">
+	
+	<div class="scoreboard">
+		<div class="scoreboard__title"></div>
+	
+		<table class="scoreboard__table">
+			<fest:each iterate="json" index="i" value="top">
+				<tr>
+					<td><fest:value>top.name</fest:value></td>
+					<td><fest:value>top.score</fest:value></td>
+				</tr>
+			</fest:each>	
+		</table>
+
+		<a href="/#"><button class="scoreboard__js-back"> Back </button></a>
+	</div>
+
+</fest:template>

@@ -1,0 +1,4 @@
+<class type='resources.GameResources'>
+    <fieldSize>10</fieldSize>
+    <countOfShips>10</countOfShips>
+</class>

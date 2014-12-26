@@ -1,0 +1,12 @@
+<fest:template xmlns:fest="http://fest.mail.ru">
+<div id="main" class="window">
+	<div class="menu">
+		<div class="menu__text">
+			<p><a href="/#game" class='menu__text__game'> Game </a></p>
+			<p><a href="/#login" class="menu__text__login"> Login </a></p>
+			<p><a href="/#scoreboard" class='menu__text__scoreboard'> Score Board </a></p>
+		</div>
+	</div>	
+</div>
+</fest:template>
+

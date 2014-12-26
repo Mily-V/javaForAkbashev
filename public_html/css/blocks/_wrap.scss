@@ -1,0 +1,9 @@
+.wrap {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	background: 
+		url("../img/left_right.jpg") left top repeat-x,
+		url("../img/bottom.jpg") left bottom repeat;
+}

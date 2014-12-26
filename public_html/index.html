@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8" />
+    <title>SeaBattle</title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/game.css" />
+</head>
+<body>
+<style type="text/css">
+    @keyframes rotate{from {transform:  rotate(0);}	to {transform: rotate(360deg);}}
+    @-moz-keyframes rotate{from {-moz-transform:  rotate(0);}	to {-moz-transform: rotate(360deg);}}
+    @-webkit-keyframes rotate{from {-webkit-transform:  rotate(0);}	to {-webkit-transform: rotate(360deg);}}
+
+    .loading-wrap {
+        width: 60px; height: 60px;
+        position: absolute;
+        top: 50%; left: 50%;
+        margin: -30px 0 0 -30px;
+        background: #777;
+        animation: rotate 1.0s infinite linear;
+        -moz-animation: rotate 1.0s infinite linear;
+        -webkit-animation: rotate 1.0s infinite linear;
+        border-radius: 30px;
+    }
+
+    .triangle1, .triangle2, .triangle3 {
+        border-width: 0 20px 30px 20px;
+        border-style: solid;
+        border-color: transparent;
+        border-bottom-color: #67cbf0;
+        height: 0; width: 0;
+        position: absolute;
+        left: 10px; top: -10px;
+    }
+
+    .triangle2, .triangle3 {
+        content: '';
+        top: 20px; left: 30px;
+    }
+
+    .triangle3 {
+        left: -10px;
+    }
+</style>
+<div id="loader" class = "loading-wrap">
+    <div class="triangle1"></div>
+    <div class="triangle2"></div>
+    <div class="triangle3"></div>
+</div>
+
+
+
+<script src="js/build.min.js"></script>
+<script>
+    require(['main'], function(){
+        console.log('hello');
+    });
+</script>
+</body></html>

@@ -1,0 +1,15 @@
+<fest:template xmlns:fest="http://fest.mail.ru">
+    <div class="login">
+        <div class="login__title"></div>
+        <div class="login__error" id="error"></div>
+        <div class="login__form">
+            <form id="loginForm">
+                <p><input name="login" type="text" placeholder="Email" maxlength="255"> </input></p>
+                <p><input name="password" type="password" placeholder="Password" maxlength="255"> </input></p>
+                <p><input class="submitButton" type="submit" value="Submit"></input></p>
+            </form>
+        </div>
+        <a href="/#"> <button class="js-back"> Back </button></a>
+    </div>
+    <script src="js/ajaxHandlers.js"></script>
+</fest:template>

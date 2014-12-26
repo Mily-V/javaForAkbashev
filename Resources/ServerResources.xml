@@ -1,0 +1,4 @@
+<class type='resources.ServerResources'>
+	<port>8090</port>
+	<db_name>EPICGAME_TP</db_name>
+</class>
